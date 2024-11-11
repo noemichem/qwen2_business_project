@@ -1,0 +1,8 @@
+Flask==2.3.3
+torch==2.1.0 
+transformers==4.31.0  
+numpy==1.25.0
+pandas==2.0.3
+scikit-learn==1.3.0
+matplotlib==3.8.0
+requests==2.31.0

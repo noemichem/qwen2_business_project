@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSV Upload and Data Visualization</title>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container" style="margin-top: 60px;">
+        <h1>Upload your CSV file</h1>
+        <form id="uploadForm" class="upload-form">
+            <input type="file" id="fileInput" name="file" accept=".csv" required>
+            <button type="submit">Upload</button>
+        </form>
+
+        <!-- Section for displaying the charts -->
+        <div id="chartsContainer" style="display: none;">
+            <h2>Data Visualizations</h2>
+            <div class="chart-section">
+                <h3>Before Cleaning</h3>
+                <img id="beforeChart" alt="Before Cleaning Chart" class="chart-image" style="display: none;">
+            </div>
+            <div class="chart-section">
+                <h3>After Cleaning</h3>
+                <img id="afterChart" alt="After Cleaning Chart" class="chart-image" style="display: none;">
+            </div>
+        </div>
+
+        <div id="responseMessage" class="response-message"></div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+</body>
+</html>

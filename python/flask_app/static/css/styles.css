@@ -1,0 +1,114 @@
+/* Font and body */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.container:hover {
+    transform: translateY(-5px);
+}
+
+/* Headings */
+h1, h2, h3 {
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-top: 40px;
+}
+
+h3 {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Form styling */
+.upload-form {
+    display: inline-block;
+    width: auto;  /* The form now has an auto width to adapt to its content */
+}
+
+.upload-form input[type="file"] {
+    width: auto; /* Adapts to the size of the content */
+    padding: 10px;
+    border: 2px dashed #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease;
+    display: inline-block;  /* Keeps the input in line with the button */
+    margin-right: 10px;     /* Adds spacing between the input and the button */
+}
+
+.upload-form input[type="file"]:hover {
+    background-color: #eef;
+}
+
+/* Button styling */
+button {
+    display: inline-block;  /* Ensures the button is inline with the file input */
+    padding: 12px 20px;     /* Custom padding */
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.2);
+}
+
+/* Response message */
+.response-message {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #e74c3c;
+    font-weight: 500;
+}
+
+/* Chart sections */
+.chart-section {
+    margin-top: 20px;
+}
+
+.chart-image {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border: 3px solid #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.chart-image:hover {
+    transform: scale(1.02);
+}
